@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:text="Handy Pharmacy"
+                android:textColor="@color/blue"
+                android:textSize="24dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingBottom="30dp"
+                android:text="Register - Pharmacist"
+                android:textSize="15dp" />
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:id="@+id/row1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:id="@+id/Name1"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dip"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="6dip"
+                        android:text="Name *"
+                        android:textSize="16sp"></TextView>
+
+                    <EditText
+                        android:id="@+id/txtName1"
+                        android:layout_weight="1"
+                        android:hint="XXXXXX" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:id="@+id/lastName"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dip"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="6dip"
+                        android:text="Last Name *"
+                        android:textSize="16sp"></TextView>
+
+                    <EditText
+                        android:id="@+id/txtLastName"
+                        android:layout_weight="1"
+                        android:hint="XXXXXX" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:id="@+id/Gender"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dip"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="6dip"
+                        android:text="Gender *"
+                        android:textSize="16sp"></TextView>
+
+                    <RadioGroup
+                        android:id="@+id/radioGrp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <RadioButton
+                            android:id="@+id/radioM"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_weight="1"
+                            android:checked="true"
+                            android:text="M"
+                            android:textSize="14dp" />
+
+                        <RadioButton
+                            android:id="@+id/radioF"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_weight="1"
+                            android:text="F"
+                            android:textSize="14dp" />
+                    </RadioGroup>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:id="@+id/citizenID"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dip"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="6dip"
+                        android:text="Citizen ID *"
+                        android:textSize="16sp"></TextView>
+
+                    <EditText
+                        android:id="@+id/txtCitizenID"
+                        android:layout_weight="1"
+                        android:hint="XXXXXXXXXXXXX"
+                        android:inputType="number"
+                        android:maxLength="13" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:id="@+id/pharmNum"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dip"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="6dip"
+                        android:text="Pharmacy ID *"
+                        android:textSize="16sp"></TextView>
+
+                    <EditText
+                        android:id="@+id/txtPharmNum"
+                        android:layout_weight="1"
+                        android:hint="XXXXX"
+                        android:inputType="number"
+                        android:maxLength="5" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onTableRowClick"
+                    android:orientation="horizontal"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:id="@+id/addr"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dip"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:padding="6dip"
+                        android:text="Address *"
+                        android:textSize="16sp"></TextView>
+
+                    <EditText
+                        android:id="@+id/txtAddr"
+                        android:layout_weight="1"
+                        android:lines="1" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/province"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dip"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="Province"
+                        android:textSize="16sp"></TextView>
+
+                    <Spinner
+                        android:id="@+id/provincespinner"
+                        android:layout_weight="1"
+                        android:entries="@array/province_arrays"
+                        android:prompt="@string/province_prompt" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/rowAmphur"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/Amphur"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dip"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="Amphur"
+                        android:textSize="16sp"></TextView>
+
+                    <Spinner
+                        android:id="@+id/amphurSpinner"
+                        android:layout_weight="1"
+                        android:entries="@array/province_arrays"
+                        android:prompt="@string/province_prompt" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/rowDistrict"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/District"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dip"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:text="District"
+                        android:textSize="16sp"></TextView>
+
+                    <Spinner
+                        android:id="@+id/districtSpinner"
+                        android:layout_weight="1"
+                        android:entries="@array/province_arrays"
+                        android:prompt="@string/province_prompt" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/rowpost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:id="@+id/txtpostcode"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dip"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="6dip"
+                        android:text="Postcode*"
+                        android:textSize="16sp"></TextView>
+
+                    <EditText
+                        android:id="@+id/postcode"
+                        android:layout_weight="1"
+                        android:hint="XXXXX"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:maxLength="5" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:id="@+id/tel"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dip"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+
+                        android:gravity="center"
+                        android:padding="6dip"
+                        android:text="Phone*"
+                        android:textSize="16sp"></TextView>
+
+                    <EditText
+                        android:id="@+id/txtTel"
+                        android:layout_weight="1"
+                        android:hint="XXXXXXXXXX"
+                        android:inputType="phone"
+                        android:lines="3" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dip"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+
+                        android:gravity="center"
+                        android:padding="6dip"
+                        android:text="E-mail *"
+                        android:textSize="16sp"></TextView>
+
+                    <EditText
+                        android:id="@+id/txtEmail"
+                        android:layout_weight="1"
+                        android:hint="XXXX@gmail or hotmail"
+                        android:inputType="textEmailAddress" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:id="@+id/password"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dip"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+
+                        android:gravity="center"
+                        android:padding="6dip"
+                        android:text="Password *"
+                        android:textSize="16sp"></TextView>
+
+
+                    <EditText
+                        android:id="@+id/txtPassword"
+                        android:layout_weight="1"
+                        android:hint="******"
+                        android:inputType="textPassword" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingRight="20dp">
+
+                    <TextView
+                        android:id="@+id/passwordcon"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dip"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+
+                        android:gravity="center"
+                        android:padding="6dip"
+                        android:text="Confirm Pwd *"
+                        android:textSize="16sp"></TextView>
+
+
+                    <EditText
+                        android:id="@+id/txtPasswordcon"
+                        android:layout_weight="1"
+                        android:hint="******"
+                        android:inputType="textPassword" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/row10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/attachImages"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/camera1"></ImageView>
+
+                </TableRow>
+
+
+                <TableRow
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <Button
+                        android:id="@+id/btnConfirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:paddingRight="5dp"
+                        android:text="Confirm" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86"
+    api-level="23"
+    density="560dpi"
+    format="7"
+    timestamp="211329348694428" >
+
+    <task
+        name="javac"
+        duration="29760" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="8841" />
+    <task
+        name="verifier"
+        duration="4653" />
+
+    <artifact
+        location="C:\Users\Seeuintupro\Desktop\Handy Pharmacy\HandyPharmacyMaster\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="211329348694428" >
+        <artifact
+            location="C:\Users\Seeuintupro\Desktop\Handy Pharmacy\HandyPharmacyMaster\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

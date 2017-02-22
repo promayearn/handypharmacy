@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:textSize="40dp"
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="30dp"
+        android:text="Handy Pharmacy"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <EditText
+                android:id="@+id/LoginEmail"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:gravity="left"
+                android:hint="Enter Email"
+                android:inputType="textEmailAddress"
+                android:padding="6dip"
+                android:paddingLeft="50dp"
+                android:textColor="#000000"
+                android:textSize="16sp"></EditText>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <EditText
+                android:id="@+id/LoginPassword"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:gravity="left"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:padding="6dip"
+                android:paddingLeft="50dp"
+                android:textColor="#000000"
+                android:textSize="16sp"></EditText>
+
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <Button
+                android:id="@+id/LoginBtn"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:layout_weight="1"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:padding="6dip"
+                android:text="Login"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold"></Button>
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/row4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp">
+
+            <TextView
+                android:id="@+id/RegisLink"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dip"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:padding="6dip"
+                android:text="Register"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
